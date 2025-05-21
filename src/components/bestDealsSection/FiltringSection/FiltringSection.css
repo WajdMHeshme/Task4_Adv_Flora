@@ -1,0 +1,152 @@
+
+.filter-section {
+    position: relative;
+    padding: 1px;
+    font-family: sans-serif;
+}
+
+
+
+.filters {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 50.5px;
+    margin-bottom: 24px;
+    z-index: 2;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+
+
+
+.btn {
+    flex: 0 0 auto;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    padding: 15px 5px;
+    color: #222222;
+    white-space: nowrap;
+
+}
+
+
+.btn.active {
+    border-bottom: 2px solid var(--blue-color);
+    color: var(--blue-color);
+
+}
+
+.btn:hover {
+    color: var(--blue-color);
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+.card {
+    width: 31.6%;
+    height: 300px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    opacity: 2;
+    transition: 1s;
+}
+
+
+.image-wrapper {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+}
+
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+
+.badge.threed {
+    left: auto;
+    right: 8px;
+    background: #22222266;
+    border: 1px solid var(--white-color);
+}
+
+
+.badge.featured {
+    border: 1px solid var(--white-color);
+    background: #22222266;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.title {
+    margin: 12px;
+    font-size: 16px;
+    color: #333;
+    flex-grow: 1;
+}
+
+@media screen and (min-width:1540px) {
+    .btn {
+        font-size: 20px;
+    }
+    
+    .badge.featured,.badge.feature {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .grid {
+        flex-direction: column;
+        margin-top: 200px;
+
+        .card {
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+}

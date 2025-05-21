@@ -1,0 +1,76 @@
+.infoCard {
+    width: 32%;
+    height: 255px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+
+    h2 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 100%;
+        margin-top: 20px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 10px;
+        color: var(--text-color);
+    }
+
+}
+
+#styling {
+    width: 32%;
+    height: 255px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+
+    h2 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 100%;
+        margin-top: 20px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+}
+
+.infoCard:hover {
+    border: 1px solid var(--blue-color);
+}
+
+@media screen and (min-width: 1540px) {
+.infoCard, #styling{
+
+    h2 {
+        font-size: 28px !important;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+}
+}
+
+@media screen and (max-width: 992px) {
+    .infoCard {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #styling {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

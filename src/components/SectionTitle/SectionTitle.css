@@ -1,0 +1,33 @@
+.mainHeading {
+    margin: 94px auto 56px;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: var(--heading-text-color);
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0%;
+        color: var(--text-color);
+        margin-top: 5px;
+
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+    .mainHeading {
+        h1 {
+            font-size: 48px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}

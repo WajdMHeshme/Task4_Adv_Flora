@@ -1,0 +1,67 @@
+#imageSection {
+    position: relative;
+    width: 100%;
+    background-image: url('../../assets/Group 1312.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 380px;
+    margin: 94px auto;
+
+
+    .text {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 5;
+    }
+
+    h1 {
+        color: var(--white-color);
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 56px;
+        letter-spacing: 0%;
+
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 26px;
+        letter-spacing: 0%;
+        color: var(--white-color);
+        margin-top: 58px;
+    }
+}
+
+
+#imageSection::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00000080;
+
+}
+
+@media screen and (max-width :768px) {
+    #imageSection {
+        .text {
+
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 15px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
