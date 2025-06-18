@@ -1,0 +1,27 @@
+.imageSoonDev {
+    max-width: 600px;
+    margin: auto;
+
+    img {
+        width: 100%;
+    }
+
+
+}
+
+.txt {
+    font-size: 48px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: var(--blue-color);
+    text-align: center;
+}
+
+.info {
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #d1d1d1;
+    text-align: center;
+    margin-top: 24px;
+}

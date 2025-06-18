@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import type { NavProps } from "../../Types/Type";
 import { NavLinkData } from "../../Data";
+import { Link } from "react-router-dom";
 const Navbar = ({ logo, btnTitle }: NavProps<string>) => {
   const [open, setOpen] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -29,13 +30,13 @@ const Navbar = ({ logo, btnTitle }: NavProps<string>) => {
         <ul className="mainList">
           {NavLinkData.map((link, index) => (
             <li key={index}>
-              <a
+              <Link
                 onClick={() => setMainActive(link.label)}
                 className={mainActive == link.label ? "mainNavActive" : ""}
-                href={link.link}
+                to={link.link}
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -55,7 +56,7 @@ const Navbar = ({ logo, btnTitle }: NavProps<string>) => {
                 className={active == index ? "active" : ""}
                 key={index}
               >
-                <a href={link.link}>{link.label}</a>
+                <Link to={link.link}>{link.label}</Link>
               </li>
             ))}
 

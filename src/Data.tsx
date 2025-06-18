@@ -11,7 +11,6 @@ import img3 from "./assets/Rectangle 50 (2).png"
 import img4 from "./assets/Rectangle 50 (3).png"
 import img5 from "./assets/Rectangle 51.png"
 import img6 from "./assets/Rectangle 52.png"
-
 import img7 from './assets/Image 01.jpg'
 import img8 from './assets/Image 02.jpg'
 import img9 from './assets/Image 03.jpg'
@@ -20,7 +19,7 @@ import { CiLocationOn } from "react-icons/ci";
 export const NavLinkData: NavData<string>[] = [
   {
     label: "Home",
-    link: "/",
+    link: "",
   },
   {
     label: "About",
